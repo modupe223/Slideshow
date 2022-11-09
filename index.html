@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Slideshow</title>
+</head>
+<body>
+    <div class="container">
+        <div class="btns">
+            <span onclick="plusSlides(-1);">&#10094;</span>
+            <span onclick="plusSlides(1);">&#10095;</span>
+        </div>
+        <div class="images">
+            <div class="image fade">
+                <img src="images/flower1.jpg" alt="">
+            </div>
+            <div class="image fade">
+                <img src="images/flower2.jpg" alt="">
+            </div>
+            <div class="image fade">
+                <img src="images/flower3.jpg" alt="">
+            </div>
+            <div class="image fade">
+                <img src="images/flower4.jpg" alt="">
+            </div>
+            <div class="image fade">
+                <img src="images/flower5.jpg" alt="">
+            </div>
+            <div class="image fade">
+                <img src="images/flower6.jpg" alt="">
+            </div>
+        </div>
+        <div class="dots">
+            <span onclick = "currentSlide(1);" class="dot"></span>
+            <span onclick = "currentSlide(2);" class="dot"></span>
+            <span onclick = "currentSlide(3);" class="dot"></span>
+            <span onclick = "currentSlide(4);" class="dot"></span>
+            <span onclick = "currentSlide(5);" class="dot"></span>
+            <span onclick = "currentSlide(6);" class="dot"></span>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

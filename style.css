@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(45deg, #4b6cb7 0%, #182848 100%);
+}
+
+.container{
+    height: 40rem;
+    width: 60rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 1.5rem black;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+}
+
+.btns span{
+    font-size: 3rem;
+    padding: 1.5rem;
+    background: rgba(236, 250, 255, .5);
+    border-radius: .5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    transition: .3s;
+}
+
+.btns span:nth-child(1){
+    left: -7rem
+}
+
+.btns span:nth-child(2){
+    right: -7rem
+}
+
+.dots{
+    position: absolute;
+    bottom: -6rem;
+    left: 25%;
+}
+
+
+.dot{
+    display: inline-block;
+    padding: 1.2rem;
+    background: rgba(236, 250, 255, .5);
+    border-radius: 3rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btns span:hover{
+    background: rgba(236, 250, 255, .8);
+}
+
+.dot:hover, .active{
+    background: rgba(236, 250, 255, 1);
+}
+
+.fade{
+    animation: fade 1s;
+}
+
+@keyframes fade{
+    from{
+        opacity: .3;
+    }
+    to{
+        opacity: 1;
+    }
+}
